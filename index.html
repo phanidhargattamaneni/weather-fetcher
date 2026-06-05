@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather API Fetcher</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="weather-container">
+    <button id="unit-btn">Switch to °F</button>
+    
+    <h1>Weather API Fetcher</h1>
+
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Enter city name...">
+      <button id="search-btn">Search</button>
+    </div>
+
+    <div id="status-message" class="status" style="display: none;"></div>
+
+    <div id="weather-result" class="weather-result" style="display: none;">
+      <h2 id="city-name">London</h2>
+      <p id="date-time"></p>
+
+      <span id="weather-emoji" class="weather-emoji">☀️</span>
+      <h3 id="temp-val">22</h3>
+      <p id="weather-desc">Clear Sky</p>
+
+      <div class="weather-details">
+        <div class="detail">
+          <span>Humidity</span>
+          <strong id="humidity-val">60%</strong>
+        </div>
+        <div class="detail">
+          <span>Wind Speed</span>
+          <strong id="wind-val">12 km/h</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Logic File -->
+  <script src="app.js"></script>
+</body>
+</html>
